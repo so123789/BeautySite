@@ -1,0 +1,122 @@
+.sidebar {
+  width: 260px;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #f1e4ea;
+  min-height: 100vh;
+
+  .sidebar-title {
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #d63384;
+  }
+
+  .accordion-button {
+    font-weight: 600;
+    color: #444;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background: #fdeaf2;
+    color: #d63384;
+    box-shadow: none;
+  }
+
+  .accordion-body {
+    padding: 12px 4px;
+  }
+
+  .form-check {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+  }
+
+  .price-label {
+    margin-top: 8px;
+    font-weight: 600;
+    color: #d63384;
+  }
+
+  /* Color circles */
+  .color-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+
+    .color {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: 0.2s;
+
+      &:hover {
+        border: 2px solid #333;
+      }
+    }
+
+    .red { background: #d62828; }
+    .pink { background: #ff77aa; }
+    .nude { background: #d2a679; }
+    .brown { background: #6b3e26; }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 240px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    width: 220px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #f1e4ea;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    .sidebar-title {
+      font-size: 1.2rem;
+    }
+
+    .form-check {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    padding: 12px;
+
+    .sidebar-title {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+
+    .accordion-body {
+      padding: 8px 2px;
+    }
+
+    .form-check {
+      font-size: 0.8rem;
+      margin-bottom: 4px;
+    }
+
+    .price-label {
+      font-size: 0.9rem;
+    }
+  }
+}

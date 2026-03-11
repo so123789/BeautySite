@@ -1,0 +1,157 @@
+/* Beauty Navbar Theme */
+
+.navbar {
+  background: #ff9bd3a6 !important;
+  border-bottom: 1px solid #f3e6ea;
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #d63384 !important; // beauty pink
+
+    &:hover {
+      color: #b0256a !important;
+    }
+  }
+
+  .nav-link {
+    color: #444 !important;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: 0.3s ease;
+
+    &.nav-icon {
+      position: relative;
+      margin-right: 20px;
+
+      .badge {
+        position: absolute;
+        top: -4px;
+        right: -8px;
+        background: #d63384;
+        color: #fff;
+        font-size: 0.65rem;
+        border-radius: 50%;
+        padding: 2px 5px;
+      }
+    }
+  }
+
+    &:hover {
+      color: #d63384 !important;
+    }
+  }
+
+  form {
+    .form-control {
+      border-radius: 20px;
+      border: 1px solid #e8cfd8;
+      padding: 6px 14px;
+      min-width: 200px;
+
+      &:focus {
+        border-color: #d63384;
+        box-shadow: 0 0 0 0.15rem rgba(214, 51, 132, 0.25);
+      }
+    }
+
+    button {
+      border-radius: 20px;
+      border-color: #d63384;
+      color: #d63384;
+      font-weight: 500;
+
+      &:hover {
+        background: #d63384;
+        color: #fff;
+        border-color: #d63384;
+      }
+    }
+  }
+
+
+/* Validation text */
+.navbar-error {
+  color: #d63384;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  margin-top: -8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+
+    .nav-link {
+      margin-right: 5px;
+      font-size: 0.9rem;
+    }
+
+    form {
+      .form-control {
+        min-width: 150px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+
+    .navbar-brand {
+      font-size: 1.1rem;
+    }
+
+    .nav-link {
+      margin-right: 3px;
+      font-size: 0.85rem;
+    }
+
+    form {
+      .form-control {
+        min-width: 120px;
+        padding: 4px 10px;
+        font-size: 0.85rem;
+      }
+
+      button {
+        padding: 4px 10px;
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    .navbar-toggler {
+      border: none;
+      padding: 0.25rem 0.5rem;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .navbar-collapse {
+      border-top: 1px solid #f3e6ea;
+      margin-top: 1rem;
+      padding-top: 1rem;
+    }
+
+    form {
+      margin-top: 1rem;
+      width: 100%;
+
+      .form-control {
+        width: 100%;
+        min-width: auto;
+      }
+    }
+  }
+}

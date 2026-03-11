@@ -1,0 +1,175 @@
+.card {
+  display: block;
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.25s ease;
+  height: 100%;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+  }
+
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #222;
+    min-height: 40px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  /* Brand */
+  p:nth-of-type(1) {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+  }
+
+  /* Price */
+  p:nth-of-type(2) {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #d63384; // beauty pink
+  }
+
+  .card-actions {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    gap: 6px;
+  }
+
+  .card-actions .btn {
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .card-actions .btn:hover {
+    color: #d63384;
+    background: rgba(214, 51, 132, 0.1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .card {
+    padding: 14px;
+
+    img {
+      height: 200px;
+    }
+
+    h3 {
+      font-size: 0.95rem;
+      min-height: 35px;
+    }
+
+    p:nth-of-type(1) {
+      font-size: 0.8rem;
+    }
+
+    p:nth-of-type(2) {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    padding: 12px;
+
+    img {
+      height: 180px;
+    }
+
+    h3 {
+      font-size: 0.9rem;
+      min-height: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 10px;
+
+    img {
+      height: 160px;
+    }
+
+    h3 {
+      font-size: 0.85rem;
+      min-height: 25px;
+    }
+
+    p:nth-of-type(1) {
+      font-size: 0.75rem;
+    }
+
+    p:nth-of-type(2) {
+      font-size: 0.95rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 8px;
+
+    img {
+      height: 140px;
+    }
+
+    h3 {
+      font-size: 0.8rem;
+      min-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 6px;
+
+    img {
+      height: 120px;
+    }
+
+    h3 {
+      font-size: 0.75rem;
+    }
+
+    p:nth-of-type(1) {
+      font-size: 0.7rem;
+    }
+
+    p:nth-of-type(2) {
+      font-size: 0.9rem;
+    }
+  }
+}

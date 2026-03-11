@@ -1,0 +1,152 @@
+.footer {
+  background: #faf6f8;
+  padding: 60px 0 30px 0;
+  margin-top: 60px;
+  border-top: 1px solid #f0e6ea;
+}
+
+.footer-section {
+  .footer-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #d63384;
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 8px;
+
+      a {
+        color: #666;
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: color 0.25s ease;
+
+        &:hover {
+          color: #d63384;
+        }
+      }
+    }
+  }
+
+  .contact-info {
+    p {
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      color: #666;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      i {
+        color: #d63384;
+        width: 16px;
+      }
+
+      a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.25s ease;
+
+        &:hover {
+          color: #d63384;
+        }
+      }
+    }
+  }
+
+  .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #d63384;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.25s ease;
+
+      &:hover {
+        background: #c42a7a;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(214, 51, 132, 0.3);
+      }
+
+      i {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+.footer-divider {
+  border-color: #e0d6da;
+  margin: 40px 0 30px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+
+  p {
+    margin: 0;
+    &:first-child {
+      margin-bottom: 8px;
+    }
+  }
+
+  .heart {
+    color: #d63384;
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px 0;
+    margin-top: 40px;
+  }
+
+  .footer-section {
+    text-align: center;
+
+    .footer-title {
+      font-size: 1.2rem;
+    }
+
+    .contact-info p {
+      justify-content: center;
+    }
+
+    .social-links {
+      justify-content: center;
+    }
+  }
+
+  .footer-bottom p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-section {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
