@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import { useCart } from "../../context/CartContext";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Navbar.scss';
+import './NavBar.scss';
 
 export default function NavbarComponent() {
   const { cartItems, wishlist } = useCart();
@@ -34,6 +34,6 @@ export default function NavbarComponent() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    
+
   );
 }
